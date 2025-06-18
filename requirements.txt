@@ -1,8 +1,11 @@
+alembic
 flask
 flask-smorest
 flask-sqlalchemy
+Flask-JWT-Extended
+flask-migrate
 passlib
 marshmallow
 uuid
 python-dotenv
-gunicorns
+gunicorn
