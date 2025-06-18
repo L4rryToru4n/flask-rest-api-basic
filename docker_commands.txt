@@ -1,0 +1,10 @@
+docker compose -f docker-compose.yml -f docker-compose-debug.yml up -d
+docker exec -it <container_id> bash
+docker build -t flask-smorest-api
+-Git bash:
+docker run -dp 5000:5000 -w //app -v "//$(pwd)://app" flask-smorest-api
+-Power shell:
+docker run -dp 5000:5000 -w //app -v "$(Get-Location)://app" flask-smorest-api
+-Command prompt:
+docker run -dp 5000:5000 -w //app -v "%cd%://app" flask-smorest-api
+docker compose up --build --force-recreate --no-deps web
