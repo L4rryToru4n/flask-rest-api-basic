@@ -1,3 +1,3 @@
 # ignore .venv
-.venv\
-*.__pyc
+.venv
+*./__pyc
